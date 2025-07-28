@@ -14,20 +14,121 @@
             background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1025px-Cat03.jpg);
             background-repeat: no-repeat;
             background-size: cover;
+            text-align: justify;
+            text-transform: capitalize;
+            white-space: normal;
+            word-spacing: 10px;
+            letter-spacing: 3px;
+            line-height: 40px;
         }
 
         div.main,
         p#test {
-            background-color: rgb(119, 202, 251);
+            /* background-color: rgb(119, 202, 251); */
+            text-indent: 0px;
+            font-family: serif;
+            font-size: 30px;
+            font-style: oblique;
+            font-weight: 900;
+            font-variant: all-small-caps;
         }
+
+        #test {
+            position: fixed;
+            top: 30px;
+        }
+
+        a:link {
+            color: rgb(76, 122, 3);
+        }
+
+
+        a:visited {
+            color: rgb(216, 11, 11);
+        }
+
+        a:hover {
+            color: rgb(216, 11, 206);
+        }
+
+        a:active {
+            color: rgb(0, 0, 0);
+        }
+
+        #division2 {
+            background-color: #F3E5F5;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            left: 100px;
+            z-index: 1;
+        }
+        #div3{
+            background-color:rgb(9, 255, 0) ;
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            left: 200px;
+        }
+        #div4{
+            background-color:rgb(212, 0, 255) ;
+            position: relative;
+            height: 50px;
+            width: 50px;
+            left: 100px;
+            top: 50px;
+            float: inline-end;
+        }
+
+        #parent{
+            display:grid;
+            grid-template-columns: repeat(3,100px);
+            grid-template-rows: repeat(3,100px);
+            gap:8px;
+            background-color: black;
+            color: white;
+        }
+
     </style>
 </head>
 
 <body>
     <div class="main bca" style="background-color:rgb(255, 234, 40); padding: 20px 30px; margin: 20px 40px;  ;">
-        <p id="test" style="color: rgb(255, 255, 255); ">This is a paragraph</p>
+        <p id="test" style="color: rgb(57, 137, 227); ">This is a cat</p>
+        <a href="#" style="text-decoration: none;">This is a link Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Consectetur architecto sequi repudiandae unde atque ex distinctio, deserunt iste voluptatum
+            consequuntur enim reprehenderit tenetur quod eum molestiae laudantium quasi! Dolores incidunt voluptatum
+            temporibus nam a enim, nesciunt corrupti delectus id deleniti officia beatae illum aliquid sed molestias ab
+            ullam! Velit, fuga.</a>
         <!-- <p class="test"></p> -->
+        <a href="#12">Hello</a>
     </div>
+    <div id="division1" style="background-color: blue; height: 100px; width: 100px; position: absolute; left:100px ">
+    </div>
+
+    <div id="division2"></div>
+
+    <div id="div3">
+        <div id="div4"></div>
+    </div>
+    <div id="parent">
+        
+    </div>
+    <!-- <div id="parent">
+        <div class="flex-container">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+    </div>
+    <div id="parent">
+        <div class="grid-container">
+            <div class="grid-item header">Header</div>
+            <div class="grid-item sidebar">Sidebar</div>
+            <div class="grid-item main">Main Content</div>
+            <div class="grid-item footer">Footer</div>
+        </div>
+    </div> -->
 </body>
 
 </html>
